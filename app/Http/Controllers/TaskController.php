@@ -23,7 +23,7 @@ class TaskController extends Controller
     public function list()
     {
         // 1Page辺りの表示アイテム数を設定
-    $per_page = 2;
+    $per_page = 5;
 
 
         //一覧のデータを取得
@@ -279,4 +279,7 @@ class TaskController extends Controller
                      ->orderBy('period')
                      ->orderBy('created_at');
     }
+
 }
+
+
