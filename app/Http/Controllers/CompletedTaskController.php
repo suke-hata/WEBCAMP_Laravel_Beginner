@@ -17,7 +17,7 @@ class CompletedTaskController extends Controller
     {
 
         // 1Page辺りの表示アイテム数を設定
-        $per_page = 5;
+        $per_page = 2;
 
         // 一覧の取得
         $list = $this->getListBuilder()

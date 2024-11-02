@@ -74,14 +74,14 @@
         最初のページ
         @endif
 
-        /
+
          /
         @if ($list->previousPageUrl() !== null)
             <a href="{{ $list->previousPageUrl() }}">前に戻る</a>
         @else
             前に戻る
         @endif
-        /
+
 
         /
         @if ($list->nextPageUrl() !== null)

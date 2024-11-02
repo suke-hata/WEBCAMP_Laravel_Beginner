@@ -39,19 +39,17 @@
         現在 {{ $list->currentPage() }} ページ目<br>
 
          @if ($list->onFirstPage() === false)
-        <a href="/task/list">最初のページ</a>
+        <a href="/completed_tasks/list">最初のページ</a>
         @else
         最初のページ
         @endif
 
-        /
          /
         @if ($list->previousPageUrl() !== null)
             <a href="{{ $list->previousPageUrl() }}">前に戻る</a>
         @else
             前に戻る
         @endif
-        /
 
         /
         @if ($list->nextPageUrl() !== null)
